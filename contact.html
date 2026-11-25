@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encouraging Children </title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="doc.js"></script>
+</head>
+<body>
+  
+  <main>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <header>
+    <h1>Hi! I am Paridhi Singh from 6th class and Mount Vinson School.</h1>
+    <p>This site is built only for Children.</p>
+  </header>
+
+</head>
+
+<div class="contact-card">
+  <h2>Let's Connect!</h2>
+ <p class="connect-subtitle"><B>Have a fun idea, question, or want to say hi? Fill out the form below</B></p>
+
+  
+  <form onsubmit="showAlert(event)">
+  <label>First Name</label>
+  <input type="text" id="fname" placeholder="Your name.." required>
+
+  <label>Last Name</label>
+  <input type="text" id="lname" placeholder="Your last name">
+
+  <label>Country</label>
+  <select id="country">
+    <option value="India">India</option>
+  </select>
+
+  <button type="Click here to verify">Click here to verify</button>
+</form>
+
+<script>
+  function showAlert(event) {
+    event.preventDefault(); 
+    var name = document.getElementById("fname").value;
+    alert("Thank you " + name + "! Your message has been sent.");
+  }
+</script>
+<button type="submit" onclick="alert('Thank you! Your message has been sent.')">
+  Send Message 🚀
+</button>
+
+<footer>
+    <p>Built with 💝 from Paridhi Singh.</p>
+  </footer>
+
+</body>
+</html>
+
+

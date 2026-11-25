@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  background: #016fff, #002049, #000409;
+  color: #1329f071;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+section {
+  background: #c544ef;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(164, 4, 238, 0.433);
+}
+section h2 {
+  margin-top: 0;
+  color: #c6a3dd,#7f559b,#8641b5,#9802fb;
+}
+footer {
+  padding: 24px;
+  text-align: center;
+  background: #c580dc;
+  font-size: 0.9rem;
+}
+
+/* --- Naya Attractive Header aur Navbar CSS (Neeche Add Karein) --- */
+
+/* 1. Navigation Bar (Home, Skills, Contact) ko sundar banane ke liye */
+nav {
+  background-color: #fc0202;
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(247, 4, 4, 0.574);
+}
+
+nav a {
+  color:#1702fd;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+/* Links par mouse le jaane (Hover) par effect */
+nav a:hover {
+  background: linear-gradient(90deg, #fc0202, #ef8205, #f6de05, #05ef28, #6be6ff, #320ff5, #8d05ef);
+  color: #ff00e1;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(224, 136, 224, 0.29);
+}
+
+/* 2. Header Banner ko modern aur attractive banane ke liye */
+header {
+  background: linear-gradient(120deg, #fc0202, #f9f502,#2cfc02, #0e02f9);
+  color: #9b00fb;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(123, 33, 212, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-shadow: 2px 2px 8px rgba(181, 44, 44, 0.25);
+  letter-spacing: 0.5px;
+}
+
+header p {
+  font-size: 1.15rem;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin: 0;
+  backdrop-filter: blur(5px);
+}
+/* --- Skills Images ko Barabar Square aur Curved Box mein Set Karne ke Liye --- */
+
+section img, 
+main img {
+  width: 280px;           
+  height: 280px;          
+  object-fit: cover;      
+  border-radius: 20px;    
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 3px solid #f64b07;
+  display: block;
+  margin: 15px 0;
+  transition: transform 0.3s ease;
+}
+
+/* Photo par mouse le jaane par halka zoom effect */
+section img:hover, 
+main img:hover {
+  transform: scale(1.03);
+}
+
+/* --- हर Skill (हेडिंग + फोटो + टेक्स्ट) को एक बॉक्स (Card) में लाने के लिए --- */
+
+.skill-card {
+  background-color: #e7a6f9af;           /* बॉक्स का सफ़ेद रंग */
+  border-radius: 22px;                 /* बॉक्स के गोल किनारे */
+  padding: 25px;                       /* बॉक्स के अंदर की जगह */
+  margin: 25px auto;                   /* ऊपर-नीचे गैप और बीच में अलाइनमेंट */
+  max-width: 360px;                    /* बॉक्स की चौड़ाई */
+  text-align: center;                  /* टाइटल और लाइन्स को बीच में रखने के लिए */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); /* सुंदर शैडो */
+  border: 2px solid #d60ae4;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);         /* माउस ले जाने पर कार्ड थोड़ा ऊपर उठेगा */
+}
+
+/* कार्ड के अंदर की हेडिंग */
+.skill-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #eb5e2f;
+  font-size: 1.35rem;
+}
+
+/* कार्ड के अंदर की फोटो (बराबर स्क्वायर और गोल किनारे) */
+.skill-card img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+/* कार्ड के अंदर की लाइन्स (Paragraph) */
+.skill-card p {
+  color: #0d00fc;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.error-message {     color: red;     font-size: 13px;     display: block;     margin-top: 5px; }
